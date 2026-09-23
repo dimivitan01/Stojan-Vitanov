@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07162d">
-  <meta name="description" content="Digital business card for Stojan Vitanov, President of Foundation Institute for Socio-Economic Development Academia ABC - Strumica Macedonia.">
+  <meta name="description" content="Digital business card for Stojan Vitanov, President of Foundation Institute for Socio-Economic Development Academia ABC.">
   <title>Stojan Vitanov | Academia ABC</title>
   <style>
     :root{--navy:#07162d;--navy2:#0d2a4f;--gold:#d7ad4c;--cream:#f7f3e8;--ink:#152238;--muted:#667085;--royal-red:#9b1b30}
@@ -38,7 +38,7 @@
       <img class="logo" src="file_000000004c9082108881f802c2df22de_20260922_075728_0000.png" alt="Academia ABC logo">
       <h1>Stojan Vitanov</h1>
       <div class="rule"></div>
-      <p class="title">President of Foundation<br>Institute for Socio-Economic Development<br>Academia ABC<br>Strumica<br>Macedonia</p>
+      <p class="title">President of Foundation<br>Institute for Socio-Economic Development<br>Academia ABC</p>
     </section>
     <section class="body" aria-label="Contact information">
       <a class="contact" href="tel:+38975297790">
@@ -58,11 +58,11 @@
         <button class="btn secondary" type="button" id="save">Save contact</button>
       </div>
     </section>
-    <footer>ACADEMIA ABC · MACEDONIA</footer>
+    <footer>ACADEMIA ABC · STRUMICA · MACEDONIA</footer>
   </main>
   <script>
     document.getElementById('save').addEventListener('click', () => {
-      const vcard = ['BEGIN:VCARD','VERSION:3.0','N:Vitanov;Stojan;;;','FN:Stojan Vitanov','TITLE:President of Foundation Institute for Socio-Economic Development Academia ABC - Strumica Macedonia','ORG:Academia ABC','TEL;TYPE=CELL:+38975297790','EMAIL;TYPE=INTERNET:vitanovstojan72@gmail.com','URL:https://abcacademyfoundation.org','END:VCARD'].join('\r\n');
+      const vcard = ['BEGIN:VCARD','VERSION:3.0','N:Vitanov;Stojan;;;','FN:Stojan Vitanov','TITLE:President of Foundation Institute for Socio-Economic Development Academia ABC','ORG:Academia ABC','TEL;TYPE=CELL:+38975297790','EMAIL;TYPE=INTERNET:vitanovstojan72@gmail.com','URL:https://abcacademyfoundation.org','END:VCARD'].join('\r\n');
       const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([vcard],{type:'text/vcard'})); a.download='Stojan-Vitanov.vcf'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
     });
   </script>
