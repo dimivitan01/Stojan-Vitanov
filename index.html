@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07162d">
-  <meta name="description" content="Digital business card for Stojan Vitanov, President of Foundation Institute for Socio-Economic Development Academia ABC.">
+  <meta name="description" content="Digital business card for Stojan Vitanov, President of Foundation Institute for Socio-Economic Development Academia ABC - Strumica Macedonia.">
   <title>Stojan Vitanov | Academia ABC</title>
   <style>
     :root{--navy:#07162d;--navy2:#0d2a4f;--gold:#d7ad4c;--cream:#f7f3e8;--ink:#152238;--muted:#667085;--royal-red:#9b1b30}
@@ -62,7 +62,7 @@
   </main>
   <script>
     document.getElementById('save').addEventListener('click', () => {
-      const vcard = ['BEGIN:VCARD','VERSION:3.0','N:Vitanov;Stojan;;;','FN:Stojan Vitanov','TITLE:President of Foundation Institute for Socio-Economic Development Academia ABC','ORG:Academia ABC','TEL;TYPE=CELL:+38975297790','EMAIL;TYPE=INTERNET:vitanovstojan72@gmail.com','URL:https://abcacademyfoundation.org','END:VCARD'].join('\r\n');
+      const vcard = ['BEGIN:VCARD','VERSION:3.0','N:Vitanov;Stojan;;;','FN:Stojan Vitanov','TITLE:President of Foundation Institute for Socio-Economic Development Academia ABC - Strumica Macedonia','ORG:Academia ABC','TEL;TYPE=CELL:+38975297790','EMAIL;TYPE=INTERNET:vitanovstojan72@gmail.com','URL:https://abcacademyfoundation.org','END:VCARD'].join('\r\n');
       const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([vcard],{type:'text/vcard'})); a.download='Stojan-Vitanov.vcf'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
     });
   </script>
